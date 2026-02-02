@@ -28,7 +28,14 @@ and paste these commands
 
 [defaults]
 inventory=/etc/ansible/hosts
+remote_user = ansible
 host_key_checking=False
+
+[privilege_escalation]
+become = True
+become_method = sudo
+become_user = root
+become_ask_pass = False
 ```
 And then create a host inventory file using below commands
 ```
