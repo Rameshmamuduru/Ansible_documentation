@@ -18,4 +18,6 @@ ansible all -a "apt install nginx"
 
 Modules:
 ```
-ansible a;; -m apt -a "  
+ansible all -m apt -a "name=unzip state=present"
+ansible all -m apt -a "name=unzip state=absent"
+```
