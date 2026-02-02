@@ -47,10 +47,16 @@ and update the servers like below
 172.31.7.172
 ```
 and done with all  use the below command and check the output
+Before running the commands make sure
 
 ```
-ansible qa-server -m ping
+sudo visudo
+ansible ALL=(ALL) NOPASSWD:ALL
 
+```
+and then
+```
+ansible qa-server -m ping
 Output:
 ansible@ip-172-31-1-57:/etc/ansible$ ansible qa-server -m ping
 [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
@@ -62,5 +68,7 @@ ansible@ip-172-31-1-57:/etc/ansible$ ansible qa-server -m ping
     "changed": false,
     "ping": "pong"
 }
-ansible@ip-172-31-1-57:/etc/ansible$ 
+ansible@ip-172-31-1-57:/etc/ansible$
+```
+
 
