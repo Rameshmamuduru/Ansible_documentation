@@ -9,3 +9,13 @@ Ad-hoc commands = quick one-line commands you run with Ansible to perform a task
 - No need to write a playbook
 - Used for simple tasks or testing
 - Ideal for real-time troubleshooting or quick updates
+
+
+Adhoc- Commands:
+```
+ansible all -a "apt install nginx"
+```
+
+Modules:
+```
+ansible a;; -m apt -a "  
